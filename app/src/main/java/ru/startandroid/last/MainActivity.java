@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener(){
                     @Override
                     public void onClick (View v){
-                        Intent intent = new Intent(".chat");
+                        Intent intent = new Intent(".mychat");
                         startActivity(intent);
 
                     }

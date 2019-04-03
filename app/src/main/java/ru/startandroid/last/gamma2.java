@@ -63,7 +63,8 @@ public class gamma2 extends AppCompatActivity {
     View.OnClickListener radioButtonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            RadioGroup radioGroup = findViewById(R.id.radio);
+
+            RadioGroup radioGroup = findViewById(R.id.radio2);
             int checkedRadioButtonId = radioGroup.getCheckedRadioButtonId();
 
             RadioButton myRadioButton = (RadioButton) findViewById(checkedRadioButtonId);

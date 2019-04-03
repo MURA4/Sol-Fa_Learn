@@ -82,6 +82,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".mychat">
+            <intent-filter>
+                <action android:name=".mychat" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Chat_Room"/>
     </application>
 
 </manifest>
