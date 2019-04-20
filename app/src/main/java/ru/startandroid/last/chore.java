@@ -23,7 +23,7 @@ kek();
         addListenerOnButton();
         chore = (Button) findViewById(R.id.accord);
         interval = (Button) findViewById(R.id.interval);
-
+        chat = (Button) findViewById(R.id.chat);
         gamma = (Button) findViewById(R.id.gamma);
         klav = (Button) findViewById(R.id.klav);
         chore.setOnClickListener(
@@ -36,7 +36,16 @@ kek();
                     }
                 }
         );
+        chat.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent(".mychat");
+                        startActivity(intent);
 
+                    }
+                }
+        );
         gamma.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
@@ -136,7 +145,7 @@ kek();
     private Button klav;
     private Button chore;
     private Button gamma;
-
+    private Button chat;
     String strText;
     TextView txt;
     Button btndo;

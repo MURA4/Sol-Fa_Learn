@@ -19,7 +19,7 @@ public class chordton extends AppCompatActivity {
         setContentView(R.layout.activity_chordton);
         chore = (Button) findViewById(R.id.accord);
         interval = (Button) findViewById(R.id.interval);
-
+        chat = (Button) findViewById(R.id.chat);
         gamma = (Button) findViewById(R.id.gamma);
         klav = (Button) findViewById(R.id.klav);
         chore.setOnClickListener(
@@ -32,7 +32,16 @@ public class chordton extends AppCompatActivity {
                     }
                 }
         );
+        chat.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent(".mychat");
+                        startActivity(intent);
 
+                    }
+                }
+        );
         gamma.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
@@ -71,6 +80,7 @@ public class chordton extends AppCompatActivity {
         txt = findViewById(R.id.textView5);
     }
     private Button interval;
+    private Button chat;
     private Button klav;
     private Button chore;
     private Button gamma;
@@ -88,6 +98,12 @@ public class chordton extends AppCompatActivity {
 
             if(strText.equals("B-dur")) {
                 Drawable img = getResources().getDrawable(R.drawable.bdurchord);
+                img.setBounds(0, 0, 800, 400);
+                txt.setCompoundDrawables(img, null, null, null);
+
+            }
+            if(strText.equals("C-dur")) {
+                Drawable img = getResources().getDrawable(R.drawable.cdurak);
                 img.setBounds(0, 0, 800, 400);
                 txt.setCompoundDrawables(img, null, null, null);
 

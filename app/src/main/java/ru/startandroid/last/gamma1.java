@@ -18,6 +18,7 @@ public class gamma1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gamma1);
         chore = (Button) findViewById(R.id.accord);
+        chat = (Button) findViewById(R.id.chat);
         interval = (Button) findViewById(R.id.interval);
         klav = (Button) findViewById(R.id.klav);
         chore.setOnClickListener(
@@ -51,6 +52,16 @@ public class gamma1 extends AppCompatActivity {
                     }
                 }
         );
+        chat.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent(".mychat");
+                        startActivity(intent);
+
+                    }
+                }
+        );
 
         RadioButton сdur = (RadioButton)findViewById(R.id.cdur);
         сdur.setOnClickListener(radioButtonClickListener);
@@ -64,6 +75,7 @@ public class gamma1 extends AppCompatActivity {
     private Button interval;
     private Button klav;
     private Button chore;
+    private Button chat;
     View.OnClickListener radioButtonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {

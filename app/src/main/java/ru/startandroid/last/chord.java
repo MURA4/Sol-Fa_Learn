@@ -17,17 +17,29 @@ public class chord extends AppCompatActivity {
     }
     private Button interval;
     private Button klav;
+    private Button chat;
     private Button gamma;
     private Button chordnota;
     private Button chordton;
     public void addListenerOnButton(){
         chordnota = (Button) findViewById(R.id.button);
+        chat = (Button) findViewById(R.id.chat);
         chordton = (Button) findViewById(R.id.butto4n);
         chordnota.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
                     public void onClick (View v){
                         Intent intent = new Intent(".chore");
+                        startActivity(intent);
+
+                    }
+                }
+        );
+        chat.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent(".mychat");
                         startActivity(intent);
 
                     }

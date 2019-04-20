@@ -19,7 +19,7 @@ public class interval extends AppCompatActivity {
         setContentView(R.layout.activity_interval);
         kek();
         addListenerOnButton();
-
+        chat = (Button) findViewById(R.id.chat);
         chore = (Button) findViewById(R.id.accord);
         gamma = (Button) findViewById(R.id.gamma);
         klav = (Button) findViewById(R.id.klav);
@@ -54,6 +54,16 @@ public class interval extends AppCompatActivity {
                     }
                 }
         );
+        chat.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent(".mychat");
+                        startActivity(intent);
+
+                    }
+                }
+        );
     }
 
     public void kek(){
@@ -81,101 +91,101 @@ public class interval extends AppCompatActivity {
                 if(strText == "ч1"){
                     if(k == 2){
                         Drawable img = getResources().getDrawable(R.drawable.rere);
-                        img.setBounds(0, 0, 500, 400);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dodo);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c1);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "м2"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dorebemol);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c2);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "б2"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dore);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c3);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "м3"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.domibemol);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c4);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "б3"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.domi);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c5);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "ч4"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dofa);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c6);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "ч5"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dosol);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c7);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "м6"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dolabemol);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c8);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "б6"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dola);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c9);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "м7"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dosibemol);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c10);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "б7"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dosi);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c11);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
                 }
                 if(strText == "ч8"){
                     if(k == 1){
-                        Drawable img = getResources().getDrawable(R.drawable.dodo2);
-                        img.setBounds(0, 0, 500, 400);
+                        Drawable img = getResources().getDrawable(R.drawable.c12);
+                        img.setBounds(0, 0, 600, 300);
                         txt.setCompoundDrawables(img, null, null, null);
 
                     }
@@ -187,6 +197,7 @@ public class interval extends AppCompatActivity {
     private Button klav;
     private Button chore;
     private Button gamma;
+    private Button chat;
     String strText;
     TextView txt;
     Button btndo;

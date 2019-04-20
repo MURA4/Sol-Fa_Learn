@@ -20,6 +20,7 @@ public class gamma2 extends AppCompatActivity {
         chore = (Button) findViewById(R.id.accord);
         interval = (Button) findViewById(R.id.interval);
         klav = (Button) findViewById(R.id.klav);
+        chat = (Button) findViewById(R.id.chat);
         chore.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
@@ -51,6 +52,16 @@ public class gamma2 extends AppCompatActivity {
                     }
                 }
         );
+        chat.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent(".mychat");
+                        startActivity(intent);
+
+                    }
+                }
+        );
         RadioButton bdur = (RadioButton)findViewById(R.id.bdur);
         bdur.setOnClickListener(radioButtonClickListener);
 
@@ -58,6 +69,7 @@ public class gamma2 extends AppCompatActivity {
         txt = findViewById(R.id.textView5);
     }
     private Button interval;
+    private Button chat;
     private Button klav;
     private Button chore;
     View.OnClickListener radioButtonClickListener = new View.OnClickListener() {

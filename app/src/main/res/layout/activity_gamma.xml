@@ -20,14 +20,14 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/akkord2" />
+            android:background="@drawable/btn1" />
 
         <Button
             android:id="@+id/accord"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/akkord"
+            android:background="@drawable/btn2"
             android:shape="ring" />
 
         <Button
@@ -35,21 +35,21 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/pianino" />
+            android:background="@drawable/btn3" />
 
         <Button
             android:id="@+id/gamma"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/gamma" />
+            android:background="@drawable/btn4neg" />
 
         <Button
             android:id="@+id/chat"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/chat" />
+            android:background="@drawable/btn5" />
 
     </LinearLayout>
 

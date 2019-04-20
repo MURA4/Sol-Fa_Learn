@@ -2,22 +2,70 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#000000"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="@drawable/fon"
     tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/interval"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn1" />
+
+        <Button
+            android:id="@+id/accord"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn2"
+            android:shape="ring" />
+
+        <Button
+            android:id="@+id/klav"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn3neg" />
+
+        <Button
+            android:id="@+id/gamma"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn4" />
+
+        <Button
+            android:id="@+id/chat"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn5" />
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/bdo"
         android:layout_width="50dp"
-        android:textSize="18dp"
         android:layout_height="200dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:background="@drawable/my_button_bg2"
         android:text="С"
+        android:textSize="17dp"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -29,23 +77,23 @@
 
         android:layout_toEndOf="@+id/bfa"
         android:layout_toRightOf="@+id/bfa"
-        android:textSize="18dp"
         android:background="@drawable/my_button_bg2"
         android:text="G"
+        android:textSize="17dp"
         app:layout_constraintStart_toEndOf="@+id/bfa"
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/bla"
-        android:textSize="18dp"
         android:layout_width="50dp"
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
-
         android:layout_toEndOf="@+id/bsol"
+
         android:layout_toRightOf="@+id/bsol"
         android:background="@drawable/my_button_bg2"
         android:text="A"
+        android:textSize="17dp"
         app:layout_constraintStart_toEndOf="@+id/bsol"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -58,7 +106,7 @@
         android:layout_toRightOf="@+id/bla"
         android:background="@drawable/my_button_bg2"
         android:text="H"
-        android:textSize="18dp"
+        android:textSize="17dp"
         app:layout_constraintStart_toEndOf="@+id/bla"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -72,7 +120,7 @@
         android:layout_toRightOf="@+id/bsi"
         android:background="@drawable/my_button_bg2"
         android:text="C"
-        android:textSize="18dp"
+        android:textSize="17dp"
         app:layout_constraintStart_toEndOf="@+id/bsi"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -86,8 +134,8 @@
         android:layout_toRightOf="@+id/bmi"
         android:background="@drawable/my_button_bg2"
         android:text="F"
+        android:textSize="17dp"
         app:layout_constraintStart_toEndOf="@+id/bmi"
-        android:textSize="18dp"
         tools:layout_editor_absoluteY="0dp" />
 
     <Button
@@ -99,8 +147,8 @@
         android:layout_toEndOf="@+id/bre"
         android:layout_toRightOf="@+id/bre"
         android:background="@drawable/my_button_bg2"
-        android:textSize="18dp"
         android:text="E"
+        android:textSize="17dp"
         app:layout_constraintStart_toEndOf="@+id/bre"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -109,12 +157,12 @@
         android:id="@+id/bre"
         android:layout_width="50dp"
         android:layout_height="200dp"
-        android:textSize="18dp"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/bdo"
         android:layout_toRightOf="@+id/bdo"
         android:background="@drawable/my_button_bg2"
         android:text="D"
+        android:textSize="17dp"
         app:layout_constraintStart_toEndOf="@+id/bdo"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -134,9 +182,8 @@
         android:background="#000000"
         android:text="A#"
         android:textColor="#ffffff"
-        android:textSize="18dp"
+        android:textSize="14dp"
         app:layout_constraintEnd_toStartOf="@+id/bdo2"
-        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="@+id/bla"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -152,9 +199,9 @@
         android:layout_toEndOf="@+id/bsol"
         android:layout_toRightOf="@+id/bsol"
         android:background="#000000"
-        android:textSize="18dp"
-        android:textColor="#ffffff"
         android:text="G#"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
         app:layout_constraintEnd_toStartOf="@+id/bsi"
         app:layout_constraintStart_toEndOf="@+id/bfa"
         tools:layout_editor_absoluteY="0dp" />
@@ -171,12 +218,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_toStartOf="@+id/bla"
-        android:textSize="18dp"
-        android:textColor="#ffffff"
         android:layout_toLeftOf="@+id/bla"
         android:background="#000000"
         android:text="F#"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
         app:layout_constraintEnd_toStartOf="@+id/bla"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toEndOf="@+id/bmi"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -195,9 +243,10 @@
         android:layout_marginRight="8dp"
         android:background="#000000"
         android:text="D#"
-        android:textSize="18dp"
         android:textColor="#ffffff"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="@+id/bmi"
+        app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="@+id/bre"
         tools:layout_editor_absoluteY="0dp" />
 
@@ -215,57 +264,46 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="#000000"
-        android:textSize="18dp"
-        android:textColor="#ffffff"
         android:text="C#"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="@+id/bre"
         app:layout_constraintStart_toStartOf="@+id/bdo"
         tools:layout_editor_absoluteY="0dp" />
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
 
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+    <Button
+        android:id="@+id/inf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/information2"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <Button
-            android:id="@+id/interval"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/akkord2" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bfa"
+        app:layout_constraintVertical_bias="0.318"
+        app:srcCompat="@drawable/text7" />
 
-        <Button
-            android:id="@+id/accord"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/akkord"
-            android:shape="ring" />
-
-        <Button
-            android:id="@+id/klav"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/pianino" />
-
-        <Button
-            android:id="@+id/gamma"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/gamma" />
-
-        <Button
-            android:id="@+id/chat"
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/chat" />
-
-    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

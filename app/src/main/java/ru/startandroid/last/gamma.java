@@ -9,6 +9,7 @@ package ru.startandroid.last;
 public class gamma extends AppCompatActivity {
     private Button gam1;
     private Button gam2;
+    private Button chat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,7 +50,17 @@ public class gamma extends AppCompatActivity {
                     }
                 }
         );
+        chat = (Button) findViewById(R.id.chat);
+        chat.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick (View v){
+                        Intent intent = new Intent(".mychat");
+                        startActivity(intent);
 
+                    }
+                }
+        );
         interval.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
